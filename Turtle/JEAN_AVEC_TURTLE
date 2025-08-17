@@ -17,6 +17,7 @@ t.circle(40 , 180)
 t.forward(100)
 
 # Déssiner la lettre E
+t.pencolor("green")
 t.penup()
 t.goto( 0 , -40)
 t.pendown()
@@ -32,6 +33,7 @@ t.pendown()
 t.forward(40)
 
 # Déssiner la lettre A
+t.pencolor("yellow")
 t.penup()
 t.goto(40 , -40)
 t.pendown()
@@ -46,6 +48,7 @@ t.left(70)
 t.forward(80)
 
 # déssiner la lettre N
+t.pencolor("blue")
 t.penup()
 t.goto(180 , -40)
 t.pendown()
