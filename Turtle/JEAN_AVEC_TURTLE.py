@@ -17,6 +17,7 @@ t.circle(40 , 180)
 t.forward(100)
 
 # Déssiner la lettre E
+turtle.bgcolor("violet")
 t.pencolor("green")
 t.penup()
 t.goto( 0 , -40)
@@ -33,6 +34,7 @@ t.pendown()
 t.forward(40)
 
 # Déssiner la lettre A
+turtle.bgcolor("black")
 t.pencolor("yellow")
 t.penup()
 t.goto(40 , -40)
@@ -48,6 +50,7 @@ t.left(70)
 t.forward(80)
 
 # déssiner la lettre N
+turtle.bgcolor("white")
 t.pencolor("blue")
 t.penup()
 t.goto(180 , -40)
