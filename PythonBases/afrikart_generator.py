@@ -101,5 +101,5 @@ if creer in ('oui', 'Oui', 'OUI'):
             break
 
 #Message de remerciement
-print("Merci d'avoir utiliséAfrikart Generator !")
+print("Merci d'avoir utilisé Afrikart Generator !")
 print("Vive l'Afrique et sa créativité !")
