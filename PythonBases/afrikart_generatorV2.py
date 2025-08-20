@@ -44,11 +44,11 @@ if nomPays in ("Togo", "togo", "TOGO"):
     # Au fait je me demand esi c'est possible de creer une biblio qui va 
     # contenir les drapeaux de tout les pays qu'in aura a dessiner nous même
     # pour le moment on a que pour le togo 
-    print("🟥"*5 + "🟨"*10)
-    print("🟥"*1 + "⭐"+ "🟥"*3 + "🟩"*10)
-    print("🟥"*5 + "🟨"*10)
-    print("🟥"*5 +  "🟩"*10)
-    print("🟨"*15)
+    print("🟥"*5 + "🟩"*10)
+    print("🟥"*1 + "⭐"+ "🟥"*3 + "🟨"*10)
+    print("🟥"*5 + "🟩"*10)
+    print("🟥"*5 +  "🟨"*10)
+    print("🟩"*15)
 
 else:
     print("Oups")
