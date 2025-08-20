@@ -97,16 +97,15 @@ if continuer in ('oui', 'Oui', 'OUI'):
         elif choix == 3:
             hauteur = int(input(f"Hauteur de la pyramide (3 - 10) : "))
             caractere = input("Caractère à utiliser (*, #, @, etc.) : ")
-            for i in range(hauteur + 1):
-                print(i * caractere)
+            for i in range(1 ,hauteur + 1):
+                print(" " * (hauteur - i) + caractere * (2 * i - 1))
 
         # Réalisation motif 4
         elif choix == 4:
             hauteur = int(input(f"Hauteur de la pyramide inversée (3 - 10) : "))
             caractere = input("Caractère à utiliser (*, #, @, etc.) : ")
             for i in range(hauteur + 1,0 ,-1):
-                print(i * caractere)
-
+                print(" " * (hauteur - i) + caractere * (2 * i -2 ))
         #Message pour valeur hors plage
         elif choix not in (1, 2, 3, 4):
             print()
