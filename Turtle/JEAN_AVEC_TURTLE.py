@@ -1,0 +1,65 @@
+# Dessinons JEAN avec la fonction Turtle
+import turtle
+
+#configuration
+turtle.bgcolor("lightblue")
+t = turtle.Turtle()
+t.pensize(width=5)
+t.pencolor("red")
+t.speed(1)
+
+# Déssiner la lettre J
+t.penup()
+t.goto(-180 , 0)
+t.pendown()
+t.right(90)
+t.circle(40 , 180)
+t.forward(100)
+
+# Déssiner la lettre E
+turtle.bgcolor("violet")
+t.pencolor("green")
+t.penup()
+t.goto( 0 , -40)
+t.pendown()
+t.left(90)
+t.forward(60)
+t.right(90)
+t.forward(140)
+t.right(90)
+t.forward(60)
+t.penup()
+t.goto(-60 , 30)
+t.pendown()
+t.forward(40)
+
+# Déssiner la lettre A
+turtle.bgcolor("black")
+t.pencolor("yellow")
+t.penup()
+t.goto(40 , -40)
+t.pendown()
+t.left(70)
+t.forward(150)
+t.right(140)
+t.forward(150)
+t.penup()
+t.goto(35 , 30)
+t.pendown()
+t.left(70)
+t.forward(80)
+
+# déssiner la lettre N
+turtle.bgcolor("white")
+t.pencolor("blue")
+t.penup()
+t.goto(180 , -40)
+t.pendown()
+t.left(90)
+t.forward(130)
+t.right(145)
+t.forward(160)
+t.left(145)
+t.forward(130)
+
+turtle.done()
