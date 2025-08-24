@@ -26,7 +26,7 @@ print()
 
 password = str(input("🔑 Créer un mot de passe sécurisé (minimum 8 caractères) : "))
 while len(password) < 8 :
-        password = input(f"🔑 Mot de passe iinvalide. Créer un mot de passe sécurisé (minimum 8 caractères) : ")
+        password = input(f"🔑 Mot de passe invalide. Créer un mot de passe sécurisé (minimum 8 caractères) : ")
 print((Fore.GREEN + "✅ Mot de passe accepté !"))
 
 confirm = str(input(Style.RESET_ALL + "🔑 Confirmez votre mot de passe : "))
@@ -110,10 +110,10 @@ else :
         print(f"Nous sommes ravis de vous compter parmi nos utilisateurs {fullName}.\n")
         print("=" * 40)
     else:
-        print("=" * 40)
+        print("=" * 70)
         print(Fore.RED + "\nMots de récupération incorrectes.")
         print(" Veuillez contacter le service client ou vous rendre à l'agence.")
-        print(Style.RESET_ALL + "=" * 40)
+        print(Style.RESET_ALL + "=" * 70)
            
 
 print("\n Merci d'utiliser notre système ! 🙂\n")
