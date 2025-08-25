@@ -14,7 +14,7 @@ while 1:
     # Confirmation des données
       # déterminer le signe des coefficients
     signe_b = "+" if b > 0 else ""
-    signe_c = " +" if c > 0 else " "
+    signe_c = "+" if c > 0 else ""
     print(f"\nVotre équation est {a}x\u00B2{signe_b}{b}x{signe_c}{c}  ")   # code Unicode x\u00B2 pour écrire x²
     # Traitements
     delta = b**2 - 4*a*c
