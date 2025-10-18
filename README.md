@@ -12,10 +12,15 @@ Chaque dossier contient des exercices classés par thème ou par niveau, conçus
 
 📦 apprentissage-dev/
  ┣ 📁 python/                 → Scripts, mini-projets et exercices en Python (logique, fonctions, algorithmes, etc.)
+ 
  ┣ 📁 web_frontend/           → Dossier principal du développement web
+ 
  ┃   ┣ 📁 html/               → Exercices sur la structure des pages web, balises, formulaires, etc.
+ 
  ┃   ┣ 📁 css/                → Feuilles de style, maquettes et exercices de mise en page et design.
+ 
  ┃   ┗ 📁 javascript/         → Scripts d’interactivité, manipulations du DOM, projets simples.
+ 
  ┗ 📄 README.md               → Ce fichier de présentation
 
 🧠 Objectif du dépôt
