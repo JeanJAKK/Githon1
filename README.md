@@ -11,6 +11,7 @@ Chaque dossier contient des exercices classés par thème ou par niveau, conçus
 ## 📂 Structure du dépôt
 
 📦 apprentissage-dev/
+
  ┣ 📁 python/                 → Scripts, mini-projets et exercices en Python (logique, fonctions, algorithmes, etc.)
  
  ┣ 📁 web_frontend/           → Dossier principal du développement web
