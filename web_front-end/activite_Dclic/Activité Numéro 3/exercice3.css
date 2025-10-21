@@ -1,0 +1,18 @@
+body{
+   background-color: aliceblue;
+   }
+#paragraph-2{
+   font-weight: bold;
+   }
+.paragraph-1{
+   font-style: italic;
+   }
+.item-highlight{
+  color: blue;
+  }
+[class^="a"]{
+  background-color: yellow;
+  }
+[class$="date"]{
+  background-color: green;
+  }

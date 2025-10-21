@@ -1,0 +1,18 @@
+body{
+   background-color: aliceblue;
+   }
+.highlight{
+   color:blue;
+   font-weight: bold;
+   }
+li{
+   color: green;
+   }
+.special{
+  border: 2px solid;
+  background-color:gray;
+  }
+#firstli{
+  font-style:italic;
+  background-color:yellow;
+  }
