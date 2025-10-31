@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>EXERCICE 3</h1>
+    <script type="text/javascript">
+        // nOMBRE PREMIER ENTRE 1 ET 100
+        for(let index = 2; index <= 100; index++){
+            let compteurDiviseur = 0;
+            for(let i = 1; i <= index; i++){
+                if(index % i === 0){
+                    compteurDiviseur++;
+                }
+            }
+            if(compteurDiviseur === 2){
+                console.log(index);
+            }
+        }
+
+        // Les facteurs d'un nombre
+        let nombreSaisi = prompt("2. Entrer un nombre entier :");
+        
+        console.log(`\n\nLes facteurs de ${nombreSaisi} sont :`);
+        let compteur = 0;
+        while (compteur <= nombreSaisi){
+            if(nombreSaisi % compteur === 0){
+                console.log(compteur);
+            }
+            compteur++;
+        }
+
+        // Moyenne des nombres positifs
+        let somme = 0;
+        cpt = 0;   //compte les nombres saisis
+        while (true){
+            nbreSaisi = Number(prompt("3. Entrer  un nombre (négatif pour arrêter):"));
+            if(nbreSaisi >= 0){
+               somme += nbreSaisi;
+               cpt++;
+            } else {
+                break;
+            }
+        }
+        console.log(`\n\nLa moyenne des nombres positifs saisis vaut ${somme/cpt}`)
+        
+
+        // motif triangulaire en utilisant des étoiles
+        let hauteur = Number(prompt("4. Entrer la hauteur :"));
+        let counter = 1;         
+        while (counter < hauteur + 1){
+             console.log("*".repeat(counter));
+             counter++;
+             console.log(" ".repeat(counter+1));
+             counter++;
+        }
+
+    </script>
+</body>
+</html>

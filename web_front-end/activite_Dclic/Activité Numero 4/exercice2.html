@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>EXERCICE 2</h1>
+    <script type="text/javascript">
+        // Affiche des nombres de 1 à 10
+        for(let i = 0; i <= 10; i++){
+            console.log(i);
+        };
+
+        //Somme des entiers de 1 à 100
+        let entier = 0;
+        let somme = 0;
+        while(entier <= 100){
+            somme += entier;
+            entier++;
+        }
+        console.log(`\nLa somme des 100 premiers entiers est ${somme}\n`)
+         
+        // Nombre secret
+        let nombreSecret = 57;
+        do{
+            var proposition = prompt("Deviner un nombre secret entre 1 et 100. :");
+            if(proposition < nombreSecret){
+                console.log("Le nombre secret est plus grand.");
+            }else if(proposition > nombreSecret){
+                        console.log("Le nombre secret est plus petit.");
+                   }else if(proposition === nombreSecret){
+                               console.log(`\nBravo!! Le nombre secret est ${nombreSecret}.\n\n`);
+                            }
+        } while(proposition === nombreSecret);
+
+        // Suite de Fibonacci
+        let nombreTerme = prompt("Entrer le nombre de terme de la suite :");
+        console.log(0);
+        console.log(1);
+        let index = 0;
+        termeCourant = 1;
+        termePrecedent = 0;
+        while(index < nombreTerme){
+            termeSuivant = termeCourant + termePrecedent;
+            console.log(termeSuivant);
+            termePrecedent = termeCourant;
+            termeCourant = termeSuivant;
+            index++;
+        };
+    </script>
+</body>
+</html>
