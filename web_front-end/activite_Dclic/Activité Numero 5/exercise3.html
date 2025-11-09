@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise3</title>
+  </head>
+  <body>
+    <label for="date">Une date JJ/MM/AAAA</label>
+    <input type="date" name="date" id="date" />
+    <p>Le jour est: <span id="jour"></span></p>
+    <p>Le mois est: <span id="mois"></span></p>
+    <p>L'année est: <span id="an"></span></p>
+    <br />
+    <p>
+      La différence en jours entre la date actuelle et la date saisie est
+      <span id="diff"></span>
+    </p>
+    <script>
+      const date = document.querySelector("#date");
+      const jour = document.querySelector("#jour");
+      const mois = document.querySelector("#mois");
+      const an = document.querySelector("#an");
+
+      date.addEventListener("input", () => {
+        objectDate = new Date(date.value);
+        an.textContent = objectDate.getFullYear();
+        jour.textContent = objectDate.getDate();
+        mois.textContent = objectDate.getMonth();
+      });
+
+      // Nouveau script
+      const diff = document.querySelector("#diff");
+      const dateActuelle = new Date();
+      date.addEventListener("input", () => {
+        let jourDiff = (objectDate - dateActuelle) / (3600 * 1000 * 24);
+        jourDiff >= 0 ? (jourDiff = jourDiff) : (jourDiff = -jourDiff);
+        diff.textContent = jourDiff.toFixed(1);
+      });
+    </script>
+  </body>
+</html>

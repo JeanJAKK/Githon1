@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temps reel</title>
+  </head>
+  <style>
+    input {
+      text-align: center;
+      font-size: larger;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <h1>Temps réel...</h1>
+    <input type="text" id="texte" />
+    <script>
+      const texte = document.querySelector("#texte");
+
+      setInterval(() => {
+        const now = new Date();
+        const heureLocale = now.toLocaleTimeString();
+        texte.value = heureLocale;
+      }, 1000);
+      setTimeout(time, 1000);
+      time();
+    </script>
+  </body>
+</html>

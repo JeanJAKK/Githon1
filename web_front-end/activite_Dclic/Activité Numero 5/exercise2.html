@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise2</title>
+  </head>
+  <body>
+    <label for="nombre">Saisir un nombre: </label>
+    <input type="number" name="nombre" id="nombre" />
+    <p>
+      La racine carré de <span class="nombreIn"></span> est:
+      <span id="nombreOut"></span>
+    </p>
+    <p>
+      L'entier le plus proche de <span class="nombreIn"></span> est:
+      <span id="nombreOut1"></span>
+    </p>
+    <br /><br />
+    <input type="button" value="Générer un nombre" id="button" />
+    <p>Le nombre générer est: <span id="gen"> </span></p>
+    <script>
+      const nombre = document.querySelector("#nombre");
+      const nombreIn = document.querySelectorAll(".nombreIn");
+      const nombreOut = document.querySelector("#nombreOut");
+      const nombreOut1 = document.querySelector("#nombreOut1");
+
+      nombre.addEventListener("input", () => {
+        nombreIn[0].textContent = nombre.value;
+        nombreIn[1].textContent = nombre.value;
+        const number = nombre.value;
+        nombreOut.textContent = Math.sqrt(number).toFixed(3);
+        nombreOut1.textContent = Math.round(number);
+      });
+
+      // Fonction aléatoire
+      const button = document.querySelector("#button");
+      const gen = document.querySelector("#gen");
+
+      function Aleatoire(min, max) {
+        nombreGenere = Math.floor(Math.random() * (max - min + 1) + min);
+        return nombreGenere;
+      }
+
+      button.addEventListener("click", () => {
+        gen.textContent = Aleatoire(30, 79);
+      });
+    </script>
+  </body>
+</html>

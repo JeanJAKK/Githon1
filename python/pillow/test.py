@@ -2,11 +2,15 @@
 from PIL import Image
 
 # Ouvrir une image
-image = Image.open("pillowTestImg.jpg")
+try:
+    chemin = input("Le chemin d'accès e l'image : ")
+    image = Image.open(chemin)
 
-# Redimensionner
-icone = image.resize((64, 64))
+    # Redimensionner
+    icone = image.resize((64, 64))
 
-# save as icone
-icone.save("myicone.ico")
-print("Icone crée avec succès !")
+    # save as icone
+    icone.save("myicone.ico")
+    print("Icone crée avec succès !")
+except FileNotFoundError:
+   print("Chemin ivalide ")

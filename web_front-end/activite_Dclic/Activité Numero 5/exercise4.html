@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise4</title>
+  </head>
+  <body>
+    <h1>Manipulation de tableau...</h1>
+    <p>Tableau initial : <span id="initial"></span></p>
+    <p>Après ajout (88) : <span id="apresAjout"></span></p>
+    <p>Après suppression (7) : <span id="Suppression"></span></p>
+    <p>Tableau trié : <span id="tri"></span></p>
+    <script>
+      // tableau avec quelques nombres.
+      let nombres = [15, 42, 7, 20, 95];
+      const initial = document.querySelector("#initial");
+      const tri = document.querySelector("#tri");
+      const suppr = document.querySelector("#Suppression");
+      const ajout = document.querySelector("#apresAjout");
+
+      initial.textContent = nombres.join(", ");
+
+      // Ajouter àla fin
+      const nouvelElement = 88;
+      nombres.push(nouvelElement);
+      ajout.textContent = nombres.join(", ");
+
+      // supprimer 7
+      const i = nombres.indexOf(7);
+      nombres.splice(i, 1);
+      suppr.textContent = nombres.join(", ");
+
+      // tri
+      nombres.sort((a, b) => a - b);
+      tri.textContent = nombres.join(", ");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise1</title>
+  </head>
+  <body>
+    <label for="texte">Saisir une chaine de caractères: </label>
+    <input type="text" name="texte" id="texte" />
+    <p>La longueur du texte est : <span id="len">0</span></p>
+    <p>La sous chaine extraite est : <span id="sousChain"> </span></p>
+
+    <script>
+      const texteSpan = document.querySelector("#len");
+      const texteSpan2 = document.querySelector("#sousChain");
+      const texteSaisi = document.querySelector("#texte");
+
+      texteSaisi.addEventListener("input", () => {
+        const longueur = texteSaisi.value.length;
+        const sousChain = texteSaisi.value.substring(0, 3);
+        texteSpan.textContent = longueur;
+        texteSpan2.textContent = sousChain;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculateur</title>
+  </head>
+  <body>
+    <h1>Calculateur</h1>
+    <table>
+      <tr>
+        <td>
+          <label for="montant">Le montant du prêt: </label>
+        </td>
+        <td><input type="number" id="montant" name="montant" /><br /></td>
+      </tr>
+      <tr>
+        <td>
+          <label for="taux">Taux d'intérêt annuel(en %): </label>
+        </td>
+        <td><input type="number" name="taux" id="taux" /><br /></td>
+      </tr>
+      <tr>
+        <td>
+          <label for="an">Durée en année: </label>
+        </td>
+        <td><input type="number" name="an" id="an" /><br /></td>
+        <br />
+      </tr>
+    </table>
+    <p>Le paiement mensuel résultant est: <span id="resultat">0</span></p>
+    <script>
+      const montantElement = document.querySelector("#montant");
+      const tauxElement = document.querySelector("#taux");
+      const dureeElement = document.querySelector("#an");
+      const resultatElement = document.querySelector("#resultat");
+
+      // Constante pour le nombre de mois par an
+      const MOIS_PAR_AN = 12;
+
+      // calcul
+      function calculerPaiement() {
+        // Convertir les valeurs des inputs en float
+        const P = parseFloat(montantElement.value);
+        const tauxAnnuel = parseFloat(tauxElement.value);
+        const dureeAns = parseFloat(dureeElement.value);
+
+        // Vérifier si toutes les valeurs nécessaires sont présentes et positives
+        if (P > 0 && tauxAnnuel >= 0 && dureeAns > 0) {
+          let r = tauxAnnuel / 100 / MOIS_PAR_AN;
+          let n = dureeAns * MOIS_PAR_AN;
+
+          // M = P * (r * (1 + r)^n) / ((1 + r)^n - 1)
+          let M = (P * (r * (1 + r) ** n)) / ((1 + r) ** n - 1);
+
+          // Afficher le résultat arrondi à deux décimales
+          resultatElement.textContent = M.toFixed(2) + " $";
+        }
+      }
+      // Fonction générique pour gérer la validation
+      function validerInput(element, nom) {
+        element.addEventListener("input", () => {
+          const valeur = parseFloat(element.value);
+          if (valeur < 0) {
+            alert(`Erreur, ${nom} ne peut pas être négatif.`);
+            element.value = 0;
+          }
+          // Appeler la fonction de calcul après chaque modification
+          calculerPaiement();
+        });
+      }
+
+      validerInput(montantElement, "montant");
+      validerInput(dureeElement, "durée");
+      validerInput(tauxElement, "taux");
+
+      // Appel
+      calculerPaiement();
+    </script>
+  </body>
+</html>
