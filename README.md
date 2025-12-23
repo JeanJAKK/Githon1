@@ -6,11 +6,6 @@ Ce repository regroupe mes travaux pratiques et expérimentations autour de deux
 - 🐍 **Programmation en Python**
 - 🌐 **Développement Web Front-End (HTML, CSS & JavaScript)**
 
-Chaque dossier contient des exercices classés par thème ou par niveau, conçus pour renforcer mes compétences au fil de ma progression.
-
-- 🐍 **Programmation en Python**
-- 🌐 **Développement Web Front-End (HTML, CSS & JavaScript)**
-
 ---
 
 ## 📂 Structure du dépôt
