@@ -8,17 +8,8 @@ Ce repository regroupe mes travaux pratiques et expérimentations autour de deux
 
 Chaque dossier contient des exercices classés par thème ou par niveau, conçus pour renforcer mes compétences au fil de ma progression.
 
-## 📂 Structure du dépôt
-
-# 🚀 Exercices d’apprentissage — Python & Développement Web Front-End
-
-Bienvenue dans mon dépôt d’exercices personnels !  
-Ce repository regroupe mes travaux pratiques et expérimentations autour de deux grands domaines :
-
 - 🐍 **Programmation en Python**
 - 🌐 **Développement Web Front-End (HTML, CSS & JavaScript)**
-
-Chaque dossier contient des exercices classés par thème ou par niveau, conçus pour renforcer mes compétences au fil de ma progression.
 
 ---
 
@@ -53,15 +44,15 @@ Chaque dossier contient des exercices classés par thème ou par niveau, conçus
 Apprendre, pratiquer et progresser pas à pas dans la programmation et le développement web.
 
 Ce projet me sert à :
+```
+- Mettre en pratique mes cours et tutoriels ;
 
-Mettre en pratique mes cours et tutoriels ;
+- Consolider mes bases dans chaque langage ;
 
-Consolider mes bases dans chaque langage ;
+- Suivre mon évolution au fil du temps ;
 
-Suivre mon évolution au fil du temps ;
-
-Partager mes codes avec la communauté.
-
+- Partager mes codes avec la communauté.
+```
 🧩 Technologies utilisées
 Domaine	Langage / Techno	Description
 💻 Programmation	🐍 Python	Logique, structures de données, fonctions, scripts et petits projets.
