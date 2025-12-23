@@ -61,18 +61,8 @@ Ce dépôt est vivant 💡 :
 J’y ajoute régulièrement de nouveaux exercices, projets et améliorations.
 Tu peux suivre mes progrès en consultant les commits ou en explorant les dossiers.
 
-🤝 Contributions
 
-Les contributions sont les bienvenues !
-Si tu veux proposer une idée, un exercice ou une correction :
 
-Fork le repo
-
-Crée une branche (feature/nom-exercice)
-
-Fais tes modifications
-
-Ouvre une Pull Request 🚀
 
 🧾 Licence
 
