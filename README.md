@@ -10,20 +10,44 @@ Chaque dossier contient des exercices classés par thème ou par niveau, conçus
 
 ## 📂 Structure du dépôt
 
+# 🚀 Exercices d’apprentissage — Python & Développement Web Front-End
+
+Bienvenue dans mon dépôt d’exercices personnels !  
+Ce repository regroupe mes travaux pratiques et expérimentations autour de deux grands domaines :
+
+- 🐍 **Programmation en Python**
+- 🌐 **Développement Web Front-End (HTML, CSS & JavaScript)**
+
+Chaque dossier contient des exercices classés par thème ou par niveau, conçus pour renforcer mes compétences au fil de ma progression.
+
+---
+
+## 📂 Structure du dépôt
+
+```
 📦 apprentissage-dev/
+│
+├── 📁 python/
+│   └── Scripts, mini-projets et exercices en Python
+│       (logique, fonctions, algorithmes, etc.)
+│
+├── 📁 web_frontend/
+│   ├── 📁 html/
+│   │   └── Exercices sur la structure des pages web
+│   │       (balises, formulaires, sémantique)
+│   │
+│   ├── 📁 css/
+│   │   └── Feuilles de style, maquettes et exercices
+│   │       de mise en page et de design
+│   │
+│   └── 📁 javascript/
+│       └── Scripts d’interactivité, manipulation du DOM
+│           et projets simples
+│
+└── 📄 README.md
+    └── Fichier de présentation du dépôt
 
- ┣ 📁 python/                 → Scripts, mini-projets et exercices en Python (logique, fonctions, algorithmes, etc.)
- 
- ┣ 📁 web_frontend/           → Dossier principal du développement web
- 
- ┃   ┣ 📁 html/               → Exercices sur la structure des pages web, balises, formulaires, etc.
- 
- ┃   ┣ 📁 css/                → Feuilles de style, maquettes et exercices de mise en page et design.
- 
- ┃   ┗ 📁 javascript/         → Scripts d’interactivité, manipulations du DOM, projets simples.
- 
- ┗ 📄 README.md               → Ce fichier de présentation
-
+```
 🧠 Objectif du dépôt
 
 Apprendre, pratiquer et progresser pas à pas dans la programmation et le développement web.
